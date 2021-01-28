@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 requests = "*"
+requests-html = "*"
+jikanpy = "*"
+python-dateutil = "*"
 
 [dev-packages]
 
