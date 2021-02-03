@@ -5,11 +5,12 @@ from requests_html import HTML
 import datetime
 import re
 from util import Util
+from logger import Logger
 
 class TorrentHandler:
     def __init__(self):
         self.util = Util()
-
+        self.logger = Logger()
 
     def loadjson(self, path):
         anime_to_download = None
@@ -29,9 +30,7 @@ class TorrentHandler:
         obj["quality"] = matches[1]
         obj["size"] = textArr[1]
         obj["isbatch"] = True if ('Batch' or 'batch' in textArr[0]) else False 
-        return obj
-        
-            
+        return obj     
 
     def assemble_torrents(self, html):
         torrents = []
@@ -45,14 +44,24 @@ class TorrentHandler:
             print("Something went wrong..")
         return torrents
 
-    def get_torrents(self, animeName, pageNumber=1):
-        name = animeName.replace(" ", "+")
-        URL = f"https://nyaa.net/search/{pageNumber}?c=_&q=*{name}"
-        result = requests.get(URL)
-        html = HTML(html=result.text)
+    def make_https_call(self, name, pageNumber=1):
+         URL = f"https://nyaa.net/search/{pageNumber}?c=_&q=*{'Yakusoku+no+Neverland+2nd'}"
+         result = requests.get(URL)
+         html = HTML(html=result.text)
+         return html    
+
+    def get_torrents(self, anime, pageNumber=1):
+        search_query = anime["title"]
+        name = search_query.replace(" ", "+")
+        html = self.make_https_call(name, pageNumber)     
+        if 'No results found' in html.text:
+            for query in anime['search_queries']:
+                name = query.replace(" ", "+")
+                html = self.make_https_call(name, pageNumber)
+                if 'No results found' not in html.text:
+                    break
         torrents = self.assemble_torrents(html)
         return torrents
-
 
     def fetch_anime_list(self):
         todayWeekDay = datetime.datetime.today().weekday()
@@ -63,20 +72,18 @@ class TorrentHandler:
         anime_list = data[self.util.get_weekday(todayWeekDay)]
         return anime_list
 
-    def select_torrents(self, anime, torrents):
-        print(anime)
-        print(torrents)
-
+    def select_torrents(self, anime, torrents, download_logs):
+        pass        
 
     def torrent_handler(self):
         anime_list = self.fetch_anime_list()
+        download_logs = self.logger.log_read('download_logger.json')
         for anime in anime_list:
-            torrentList = self.get_torrents(anime["title"])
-            print(torrentList)
+            torrentList = self.get_torrents(anime)
+            self.select_torrents(anime, torrentList, download_logs)
+
+
         
-
-
-
 th = TorrentHandler()
 th.torrent_handler()
 

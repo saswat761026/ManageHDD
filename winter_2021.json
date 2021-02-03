@@ -9,7 +9,7 @@
       "type": "TV",
       "airing_start": "2020-12-06T15:10:00+00:00",
       "episodes": 16,
-      "members": 567176,
+      "members": 628214,
       "genres": [
         {
           "mal_id": 1,
@@ -63,13 +63,21 @@
           "url": "https://myanimelist.net/anime/producer/569/MAPPA"
         }
       ],
-      "score": 9.18,
+      "score": 9.2,
       "licensors": ["Funimation"],
       "r18": false,
       "kids": false,
       "continuing": false,
       "torrentname": "[SSA] | [Erai-raws]",
-      "quality": "720 | 480 | 1080"
+      "quality": "720 | 480 | 1080",
+      "search_queries": [
+        "Shingeki no Kyojin: The Final Season",
+        "Shingeki no Kyojin Season 4",
+        "Attack on Titan Season 4",
+        "Attack on Titan Final Season",
+        "\u9032\u6483\u306e\u5de8\u4eba The Final Season"
+      ],
+      "is_new_anime": true
     }
   ],
   "Thursday": [
@@ -82,7 +90,7 @@
       "type": "TV",
       "airing_start": "2021-01-07T16:25:00+00:00",
       "episodes": 11,
-      "members": 402647,
+      "members": 433190,
       "genres": [
         {
           "mal_id": 24,
@@ -124,13 +132,19 @@
           "url": "https://myanimelist.net/anime/producer/1835/CloverWorks"
         }
       ],
-      "score": 8.31,
+      "score": 8.09,
       "licensors": ["Aniplex of America"],
       "r18": false,
       "kids": false,
       "continuing": false,
       "torrentname": "[SSA] | [Erai-raws]",
-      "quality": "720 | 480 | 1080"
+      "quality": "720 | 480 | 1080",
+      "search_queries": [
+        "Yakusoku no Neverland S2",
+        "The Promised Neverland Season 2",
+        "\u7d04\u675f\u306e\u30cd\u30d0\u30fc\u30e9\u30f3\u30c9"
+      ],
+      "is_new_anime": true
     }
   ],
   "Saturday": [
@@ -139,11 +153,11 @@
       "url": "https://myanimelist.net/anime/42897/Horimiya",
       "title": "Horimiya",
       "image_url": "https://cdn.myanimelist.net/images/anime/1791/110336.jpg",
-      "synopsis": "Although admired at school for her amiability and academic prowess, high school student Kyouko Hori has been hiding another side of her. With her parents often away from home due to work, Hori has to look after her younger brother and do the housework, leaving no chance to socialize away from school.\r\n\r\nMeanwhile, Izumi Miyamura is seen as a brooding, glasses-wearing otaku. However, in reality, he is a gentle person inept at studying. Furthermore, he has nine piercings hidden behind his long hair and a tattoo along his back and left shoulder.\r\n\r\nBy sheer chance, Hori and Miyamura cross paths outside of school\u2014neither looking as the other expects. These seemingly polar opposites become friends, sharing with each other a side they have never shown to anyone else.\r\n\r\n[Written by MAL Rewrite]",
+      "synopsis": "On the surface, the thought of Kyouko Hori and Izumi Miyamura getting along would be the last thing in people's minds. After all, Hori has a perfect combination of beauty and brains, while Miyamura appears meek and distant to his fellow classmates. However, a fateful meeting between the two lays both of their hidden selves bare. Even though she is popular at school, Hori has little time to socialize with her friends due to housework. On the other hand, Miyamura lives under the noses of his peers, his body bearing secret tattoos and piercings that make him look like a gentle delinquent.\r\n\r\nHaving opposite personalities yet sharing odd similarities, the two quickly become friends and often spend time together in Hori's home. As they both emerge from their shells, they share with each other a side of themselves concealed from the outside world.\r\n\r\n[Written by MAL Rewrite]",
       "type": "TV",
       "airing_start": "2021-01-09T15:30:00+00:00",
       "episodes": 13,
-      "members": 237316,
+      "members": 270142,
       "genres": [
         {
           "mal_id": 36,
@@ -185,13 +199,20 @@
           "url": "https://myanimelist.net/anime/producer/1835/CloverWorks"
         }
       ],
-      "score": 8.58,
+      "score": 8.56,
       "licensors": ["Funimation"],
       "r18": false,
       "kids": false,
       "continuing": false,
       "torrentname": "[SSA] | [Erai-raws]",
-      "quality": "720 | 480 | 1080"
+      "quality": "720 | 480 | 1080",
+      "search_queries": [
+        "Horimiya",
+        "Hori-san and Miyamura-kun",
+        "Horimiya",
+        "\u30db\u30ea\u30df\u30e4"
+      ],
+      "is_new_anime": false
     }
   ],
   "Wednesday": [
@@ -199,12 +220,12 @@
       "mal_id": 41491,
       "url": "https://myanimelist.net/anime/41491/Nanatsu_no_Taizai__Fundo_no_Shinpan",
       "title": "Nanatsu no Taizai: Fundo no Shinpan",
-      "image_url": "https://cdn.myanimelist.net/images/anime/1723/110185.jpg",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1320/111366.jpg",
       "synopsis": "Fourth season of Nanatsu no Taizai.",
       "type": "TV",
       "airing_start": "2021-01-13T08:55:00+00:00",
       "episodes": 24,
-      "members": 118966,
+      "members": 129644,
       "genres": [
         {
           "mal_id": 1,
@@ -252,13 +273,20 @@
           "url": "https://myanimelist.net/anime/producer/37/Studio_Deen"
         }
       ],
-      "score": 7.27,
+      "score": 7.25,
       "licensors": [],
       "r18": false,
       "kids": false,
       "continuing": false,
       "torrentname": "[SSA] | [Erai-raws]",
-      "quality": "720 | 480 | 1080"
+      "quality": "720 | 480 | 1080",
+      "search_queries": [
+        "Nanatsu no Taizai",
+        "The Seven Deadly Sins: Judgement of Fury",
+        "The Seven Deadly Sins: Dragon's Judgement",
+        "\u4e03\u3064\u306e\u5927\u7f6a \u61a4\u6012\u306e\u5be9\u5224"
+      ],
+      "is_new_anime": true
     }
   ]
 }

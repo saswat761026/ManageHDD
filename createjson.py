@@ -16,7 +16,22 @@ class CreateJson:
         data = None
         with open(path, "r") as f:
             data = json.load(f)
-        return data                       
+        return data  
+
+    def create_search_queries(self, req_anime, anime_details):
+        queries = [query for query in req_anime['queries']]
+        title_synonyms = [title for title in anime_details['title_synonyms']]
+        queries = queries+title_synonyms
+        queries.append(anime_details['title_english'])
+        queries.append(anime_details['title_japanese'])
+        return queries    
+
+    def check_new_anime(self, anime_details):
+        related = anime_details['related']
+        if 'Prequel' in related.keys():
+            return True if len(anime_details['related']['Prequel']) > 0 else False 
+        else:
+            return False    
 
     def get_json(self, req_anime_list, season, year):
         jikan = Jikan()
@@ -25,9 +40,12 @@ class CreateJson:
         for anime in animes_this_season['anime']:
             for req_anime in req_anime_list:
                 if anime['title'] == req_anime['name']:
+                    anime_details = jikan.anime(anime['mal_id'])
                     ani = copy.deepcopy(anime)
                     ani['torrentname'] = req_anime['torrentname']
                     ani['quality'] = req_anime['quality']
+                    ani['search_queries'] = self.create_search_queries(req_anime, anime_details)
+                    ani['is_new_anime'] = self.check_new_anime(anime_details)
                     animes.append(ani)
         return animes            
 
