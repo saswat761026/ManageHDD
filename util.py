@@ -15,4 +15,4 @@ class Util:
 
     def get_weekday(self, day):
         weekday = self.weekDays[day]
-        return weekday
+        return weekday    

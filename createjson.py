@@ -45,10 +45,10 @@ class CreateJson:
                     ani['torrentname'] = req_anime['torrentname']
                     ani['quality'] = req_anime['quality']
                     ani['search_queries'] = self.create_search_queries(req_anime, anime_details)
-                    ani['is_new_anime'] = self.check_new_anime(anime_details)
+                    ani['have_prequel'] = self.check_new_anime(anime_details)
+                    ani['folder_name'] = req_anime['folder_name']
                     animes.append(ani)
         return animes            
-
 
     def rearrange_animes_list(self, animes):
         req_json = {}
@@ -61,11 +61,9 @@ class CreateJson:
                 req_json[day] = [anime]    
         return req_json        
 
-
     def create_json_file(self, filename, data):
         with open(filename, "w") as f:
             json.dump(data, f) 
-
 
     def CreateJson(self):
         now = datetime.datetime.now()

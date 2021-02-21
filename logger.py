@@ -16,6 +16,8 @@ class Logger:
                 data = f.readlines()
         else:
             raise Exception(f"Log file with {filename} doesn't exists.")
-        return data        
+        return data
+    def create_download_obj(name, torrent_name, episode, quality, date):
+        return{'name':name, 'torrent_name': torrent_name, 'episode': episode, 'quality': quality, 'date':date}            
 
 
