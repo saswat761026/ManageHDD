@@ -26,7 +26,8 @@ class Copy:
             else:
                 print(f"Failed to move {item}\n")    
         print(f"Completly moved the pattern: {pattern}")
-            
+
+[print(x[0]) for x in os.walk("/run/media/avish/Elements/Series/Anime/7-Deadly Sins/Season 1")]            
 #cp = Copy("/home/avish", "/home/avish")
 #cp.copyfile('x', 'Documents', 'Downloads')
 
