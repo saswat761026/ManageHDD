@@ -29,7 +29,7 @@ class TorrentHandler:
         obj["magnet"] = list(links[2].links)[0]
         arr = textArr[0].split('-')
         matches = re.findall("([0-9]\w+)", arr[1])
-        obj["episode"] = matches[0]
+        obj["episode"] = re.split('(\d+)', matches[0])[0]
         obj["quality"] = matches[1]
         obj["size"] = textArr[1]
         obj["isbatch"] = True if ('Batch' or 'batch' in textArr[0]) else False 
@@ -75,10 +75,10 @@ class TorrentHandler:
         anime_list = data[self.util.get_weekday(todayWeekDay)]
         return anime_list
     
-    def get_log(self, anime,logs):
+    def get_log(self, anime,logs,property):
         reqLog = None
         for log in reversed(logs):
-            if anime['title'] == log['name']:
+            if anime[property] == log['name']:
                 reqLog = log
                 break
         return reqLog    
@@ -104,14 +104,14 @@ class TorrentHandler:
         return torrents
 
     def select_torrents(self, anime, torrents, download_logs, directory_details):
-        dlog = self.get_log(anime, download_logs)
-        dirlog = self.get_log(anime, directory_details)
+        dlog = self.get_log(anime, download_logs, 'title')
+        dirlog = self.get_log(anime, directory_details, 'folder_name')
         req_torrent_list = None
         if anime['airing_start'].astimezone() < datetime.datetime.now().astimezone():
             if dlog != None:
                 req_torrents = [torrent for torrent in torrents if torrent['date'].astimezone()>=dlog['date'].astimezone() and torrent['date'].astimezone()<=datetime.datetime.now().astimezone()]
             elif dirlog != None:
-                req_torrents = [torrent for torrent in torrents if torrent['episode'] > dirlog['last_episode'] and torrent['date'].astimezone() >= dirlog['date'].astimezone()]
+                req_torrents = [torrent for torrent in torrents if torrent['episode'] > dirlog['last_episode']]
             else:
                 req_torrents = [torrent for torrent in torrents if torrent['date'].astimezone()>=anime['airing_start'].astimezone() and torrent['date'].astimezone()<=datetime.datetime.now().astimezone()]
             req_torrent_list = self.apply_torrent_policies(anime, req_torrents)    
@@ -144,8 +144,8 @@ class TorrentHandler:
             selectedTorrents = self.select_torrents(anime, torrentList, download_logs, directory_details)
             for torrent in selectedTorrents:
                 self.open_magnet(torrent['magnet'])
-                Logger.create_download_obj(anime['title'], torrent['name'], torrent['episode'], torrent['quality'], datetime.datetime.now())
-
+                obj = self.logger.create_download_obj(anime['title'], torrent['name'], torrent['episode'], torrent['quality'], anime['folder_name'], anime['continuing'] ,datetime.datetime.now())
+                self.logger.log_write('download_logger.json', obj)
 
         
 th = TorrentHandler()

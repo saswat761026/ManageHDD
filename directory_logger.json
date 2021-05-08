@@ -1,1 +1,471 @@
-[]
+[
+  {
+    "name": "Ace Of Daimond",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Ace Of Daimond/Season 3",
+    "episode": "34"
+  },
+  {
+    "name": "Ahiru no Sora",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Ahiru no Sora/Season 2",
+    "episode": "50"
+  },
+  {
+    "name": "All Out",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/All Out/Season 1",
+    "episode": "25"
+  },
+  {
+    "name": "Another",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Another/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Ao Haru Ride",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Ao Haru Ride/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Ao-No Exorcist",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Ao-No Exorcist/Season 2",
+    "episode": "12"
+  },
+  {
+    "name": "Appare-Ranman!",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Appare-Ranman!/Season 1",
+    "episode": "13"
+  },
+  {
+    "name": "Chihayafuru",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Chihayafuru/Season 3",
+    "episode": "24"
+  },
+  {
+    "name": "Code Geass",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Code Geass/Season 2",
+    "episode": "25"
+  },
+  {
+    "name": "Darwin's Game",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Darwin's Game/Season 1",
+    "episode": "11"
+  },
+  {
+    "name": "Days",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Days/Season 1",
+    "episode": "24"
+  },
+  {
+    "name": "Deca-Dence",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Deca-Dence/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Dr.Stone",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Dr.Stone/Season 1",
+    "episode": "24"
+  },
+  {
+    "name": "Season 1",
+    "season": "Dragonball Z Remastered Season 9",
+    "season number": 9,
+    "directory": "run/media/avish/Elements/Series/Anime/Dragonball GT/Season 1/Dragonball Z Remastered Season 9",
+    "episode": "285"
+  },
+  {
+    "name": "Dragonball GT",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Dragonball GT/Season 2",
+    "episode": "70"
+  },
+  {
+    "name": "Enen no Shouboutai",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Enen no Shouboutai/Season 2",
+    "episode": "14"
+  },
+  {
+    "name": "Kaichou-wa-Maid-sama",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Kaichou-wa-Maid-sama/Season 1",
+    "episode": null
+  },
+  {
+    "name": "Kimetsu no Yaiba",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Kimetsu no Yaiba/Season 1",
+    "episode": "26"
+  },
+  {
+    "name": "Kono Oto Tomare",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Kono Oto Tomare/Season 2",
+    "episode": "13"
+  },
+  {
+    "name": "Kuroko's Basketball",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Kuroko's Basketball/Season 3",
+    "episode": "61"
+  },
+  {
+    "name": "Kuzu No Honkai",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Kuzu No Honkai/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Magi",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Magi/Season 2",
+    "episode": "25"
+  },
+  {
+    "name": "Megalo Box",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Megalo Box/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Nanatsu no Taizai",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Nanatsu no Taizai/Season 3",
+    "episode": "24"
+  },
+  {
+    "name": "Naruto",
+    "season": "Season 7",
+    "season number": 7,
+    "directory": "run/media/avish/Elements/Series/Anime/Naruto/Season 7",
+    "episode": "483"
+  },
+  {
+    "name": "No Game No Life",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/No Game No Life/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Noragami",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Noragami/Season 2",
+    "episode": "13"
+  },
+  {
+    "name": "One Piece",
+    "season": "Season 21",
+    "season number": 21,
+    "directory": "run/media/avish/Elements/Series/Anime/One Piece/Season 21",
+    "episode": "954"
+  },
+  {
+    "name": "Shingeki no Kyojin",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Shingeki no Kyojin/Season 3",
+    "episode": "61"
+  },
+  {
+    "name": "Shoujo Shuumatsu Ryouko",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Shoujo Shuumatsu Ryouko/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Steins Gate 0",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Steins Gate 0/Season 2",
+    "episode": "24"
+  },
+  {
+    "name": "Sword Art Online",
+    "season": "Season 4",
+    "season number": 4,
+    "directory": "run/media/avish/Elements/Series/Anime/Sword Art Online/Season 4",
+    "episode": "23"
+  },
+  {
+    "name": "The God of High School",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/The God of High School/Season 1",
+    "episode": "11"
+  },
+  {
+    "name": "Fairy Tail",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Fairy Tail/Season 3",
+    "episode": "328"
+  },
+  {
+    "name": "Food War",
+    "season": "Season 5",
+    "season number": 5,
+    "directory": "run/media/avish/Elements/Series/Anime/Food War/Season 5",
+    "episode": "13"
+  },
+  {
+    "name": "Full Metal Alchemist Brotherhood",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Full Metal Alchemist Brotherhood/Season 1",
+    "episode": null
+  },
+  {
+    "name": "Gleipnir",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Gleipnir/Season 1",
+    "episode": "13"
+  },
+  {
+    "name": "God Eater",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/God Eater/Season 1",
+    "episode": "13"
+  },
+  {
+    "name": "Overlord",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Overlord/Season 1",
+    "episode": "480P"
+  },
+  {
+    "name": "Parasyte  The Maxim",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Parasyte  The Maxim/Season 1",
+    "episode": "024"
+  },
+  {
+    "name": "Project-K",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Project-K/Season 2",
+    "episode": "13"
+  },
+  {
+    "name": "Re Zero kara Hajimeru Isekai Seikatsu",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/Re Zero kara Hajimeru Isekai Seikatsu/Season 2",
+    "episode": "36"
+  },
+  {
+    "name": "ReLIFE",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/ReLIFE/Season 1",
+    "episode": "17"
+  },
+  {
+    "name": "Rewrite",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Rewrite/Season 1",
+    "episode": "24"
+  },
+  {
+    "name": "Say I Love U",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Say I Love U/Season 1",
+    "episode": "9b"
+  },
+  {
+    "name": "Shigatsu wa Kimi no Uso",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Shigatsu wa Kimi no Uso/Season 1",
+    "episode": "22"
+  },
+  {
+    "name": "Ball e Youkoso",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Ball e Youkoso/Season 1",
+    "episode": "24"
+  },
+  {
+    "name": "Erased",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Erased/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "One Punch Man",
+    "season": "Season 2",
+    "season number": 2,
+    "directory": "run/media/avish/Elements/Series/Anime/One Punch Man/Season 2",
+    "episode": "12"
+  },
+  {
+    "name": "Tokyo Ghoul",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Tokyo Ghoul/Season 3",
+    "episode": "24"
+  },
+  {
+    "name": "Yuri On Ice",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Yuri On Ice/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Tower of God",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Tower of God/Season 1",
+    "episode": "13"
+  },
+  {
+    "name": "Vinland Saga",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Vinland Saga/Season 1",
+    "episode": "24"
+  },
+  {
+    "name": "Yesterday wo Utatte",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Yesterday wo Utatte/Season 1",
+    "episode": "12"
+  },
+  {
+    "name": "Yowamushi Pedal",
+    "season": "Season 4",
+    "season number": 4,
+    "directory": "run/media/avish/Elements/Series/Anime/Yowamushi Pedal/Season 4",
+    "episode": "25"
+  },
+  {
+    "name": "Black Clover",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Black Clover/Season 3",
+    "episode": "155"
+  },
+  {
+    "name": "Bleach",
+    "season": "Season 15",
+    "season number": 15,
+    "directory": "run/media/avish/Elements/Series/Anime/Bleach/Season 15",
+    "episode": "366"
+  },
+  {
+    "name": "Boku No Hero Academia",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Boku No Hero Academia/Season 1",
+    "episode": "88"
+  },
+  {
+    "name": "Boruto",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Boruto/Season 1",
+    "episode": "82"
+  },
+  {
+    "name": "Bungon Stray Dogs",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Bungon Stray Dogs/Season 1",
+    "episode": "23"
+  },
+  {
+    "name": "Zetsuen No Tempest",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Zetsuen No Tempest/Season 1",
+    "episode": "23"
+  },
+  {
+    "name": "Haikyuu",
+    "season": "Season 5",
+    "season number": 5,
+    "directory": "run/media/avish/Elements/Series/Anime/Haikyuu/Season 5",
+    "episode": "11"
+  },
+  {
+    "name": "Hajime No Ippo",
+    "season": "Season 3",
+    "season number": 3,
+    "directory": "run/media/avish/Elements/Series/Anime/Hajime No Ippo/Season 3",
+    "episode": "25"
+  },
+  {
+    "name": "Hungry Heart",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Hungry Heart/Season 1",
+    "episode": "43_"
+  },
+  {
+    "name": "Hunter x Hunter",
+    "season": "Season 6",
+    "season number": 6,
+    "directory": "run/media/avish/Elements/Series/Anime/Hunter x Hunter/Season 6",
+    "episode": "99"
+  },
+  {
+    "name": "Jujutsu Kaisen",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Jujutsu Kaisen/Season 1",
+    "episode": "11"
+  },
+  {
+    "name": "Kabaneri of the Iron Fortress",
+    "season": "Season 1",
+    "season number": 1,
+    "directory": "run/media/avish/Elements/Series/Anime/Kabaneri of the Iron Fortress/Season 1",
+    "episode": "12"
+  }
+]

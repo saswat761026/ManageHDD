@@ -1,35 +1,59 @@
 import os
+import re
 import shutil
+from util import Util
+from logger import Logger
 
 
 class Copy:
-    def __init__(self, base_src_dir, base_des_dir):
-        self.abs_src_dir = base_src_dir
-        self.abs_des_dir = base_des_dir
+    def __init__(self, src_dir, des_dir):
+        self.srcDir = src_dir
+        self.desDir = des_dir
+        self.episodeRegex = "(\.mp4|\.webm|\.mpg|\.avi|\.flv|\.wmv|\.m4v|\.mkv|\.avchd|\.mov)$"
+        self.util = Util()
+        self.logger = Logger()
 
-    def copyfile(self, pattern, src, des):
+    def copyfile(self, src, des, filesToMove):
         src_path = os.path.join(self.abs_src_dir, src)
         files_present = os.listdir(src_path)
-        
-        files_to_move = []
-        for item in files_present:
-            if pattern in item:
-                files_to_move.append(item)
-        
+
         des_path = os.path.join(self.abs_des_dir, des)
 
-        print(f"Total number of files to move{len(files_to_move)}\n")
+        print(f"Total number of files to move{len(filesToMove)}\n")
 
-        for item in files_to_move:
+        for item in filesToMove:
             if shutil.move(os.path.join(src_path, item), os.path.join(des_path, item)):
                 print(f"Successfully moved {item}\n")
             else:
                 print(f"Failed to move {item}\n")    
         print(f"Completly moved the pattern: {pattern}")
 
-[print(x[0]) for x in os.walk("/run/media/avish/Elements/Series/Anime/7-Deadly Sins/Season 1")]            
-#cp = Copy("/home/avish", "/home/avish")
-#cp.copyfile('x', 'Documents', 'Downloads')
+
+
+    def selectFilesToMove(self):
+        dirAndFiles = {}
+        for (dirpath, dirnames, filenames) in os.walk(self.srcDir):
+            dirAndFiles[dirpath] = filenames
+        print(dirAndFiles)
+        r = re.compile("")
+        filesToTransfer = []
+        for key in dirAndFiles.keys():
+            files = dirAndFiles[key]
+            episodes = self.util.getEpisodes(files, self.episodeRegex)
+            if len(episodes) > 0:
+                filesToTransfer.extend([os.path.join(key,episode) for episode in episodes])
+        return filesToTransfer    
+            
+        
+
+
+
+
+
+         
+cp = Copy("/run/media/avish/Elements/Series/Anime", "/home/avish")
+filesToTransfer = cp.selectFilesToMove()
+
 
 
 
