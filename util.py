@@ -1,3 +1,4 @@
+import re
 class Util:
 
     def __init__(self):
@@ -16,3 +17,24 @@ class Util:
     def get_weekday(self, day):
         weekday = self.weekDays[day]
         return weekday    
+
+    def getNumber(self, fileName, pattern):
+        if fileName is None:
+            return None
+        matches = re.findall(pattern, fileName)
+        return matches[0] if len(matches)>0 else None
+
+    def getLastEpisode(self, episodes, pattern):
+        for episode in reversed(episodes):
+            res = re.findall(pattern ,episode)
+            if len(res) > 0:
+                return episode
+        return None 
+
+    def getEpisodes(self, episodes, pattern):
+        files = []
+        for episode in episodes:
+            res = re.findall(pattern ,episode)
+            if len(res) > 0:
+                files.append(episode)
+        return files     
